@@ -1,17 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 
 import Card from "./Card";
 
-const CardContainer = () => {
-  
-
+const CardContainer = ({ title, discription, img }) => {
   const cards = [
     {
-      title: "Card 1",
-      description: "The Yellow is card component",
-      image: "https://images.pexels.com/photos/18255463/pexels-photo-18255463/free-photo-of-birds-on-lake.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      title: `${title}`,
+      description: `This will be the value of the Discriptionn${discription}`,
+      image:
+        "https://images.pexels.com/photos/18255463/pexels-photo-18255463/free-photo-of-birds-on-lake.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     },
   ];
+
   return (
     <div className="bg-green-500 flex  flex-wrap justify-center">
       <h1 className="text-2xl text-center justify-center flex flex-col  ">
